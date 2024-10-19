@@ -1,12 +1,10 @@
-langchain
-langchain-community
-langchain-huggingface
 transformers
 torch
-huggingface_hub
+# huggingface_hub
 protobuf
 sentencePiece
 sqlalchemy
-flask
+fastapi
+uvicorn
 unittest
 python-certifi-win32

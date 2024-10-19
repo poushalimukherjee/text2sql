@@ -1,0 +1,33 @@
+CREATE TABLE "Telegraph" (
+	"Headline"	TEXT,
+	"Article"	TEXT,
+	"Summary"	TEXT,
+	"Date"	TEXT,
+	"Image"	TEXT,
+	"Tag"	TEXT
+, URL Text);
+CREATE TABLE "HindustanTimes" (
+	"Headline"	TEXT,
+	"Article"	TEXT,
+	"Summary"	TEXT,
+	"Date"	TEXT,
+	"Image"	TEXT,
+	"Tag"	TEXT
+, URL Text);
+CREATE TABLE "IndianExpress" (
+	"Headline"	TEXT,
+	"Article"	TEXT,
+	"Summary"	TEXT,
+	"Date"	TEXT,
+	"Image"	TEXT,
+	"Tag"	TEXT
+, URL Text);
+CREATE TABLE "FPJ" (
+	"Headline"	TEXT,
+	"Article"	TEXT,
+	"Summary"	TEXT,
+	"Date"	TEXT,
+	"Image"	TEXT,
+	"Tag"	TEXT,
+	"URL"	TEXT
+);

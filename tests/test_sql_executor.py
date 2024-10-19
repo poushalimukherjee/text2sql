@@ -8,8 +8,8 @@ class TestSQLExecutor(unittest.TestCase):
     def test_execute(self):        
         queries = [
             "SELECT 1",
-            "SELECT Title FROM IMDB",
-            "SELECT count(Title) FROM IMDB"
+            "SELECT date, count(*) FROM IndianExpress GROUP BY date LIMIT 5",
+            "SELECT min(date) FROM Telegraph"
         ]        
         for query in queries:
             results = self.sql_executor.execute(query)

@@ -1,16 +1,16 @@
-from langchain.prompts import PromptTemplate
-from app.utils.extract_schema import extract_schema
-# from app.config import database_path
+from textwrap import dedent
+from app.utils.extract_schema import extract_schema_ddl
 
 # Extract schema information
-schema_info = extract_schema()
+schema_ddl = extract_schema_ddl()
 
-prompt_template = PromptTemplate(
-    template=f"""
-    Given the following database schema:
-    {schema_info}
+def create_prompt(text: str) -> str:
+    prompt_template = dedent(f'''\
+            tables:\n{schema_ddl}\n\
+            query for: {text}
+            ''').strip()
     
-    Convert the following text to an SQL query: {{text}}
-    """,
-    input_variables=["text"]
-)
+    return prompt_template
+
+
+
